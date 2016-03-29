@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/quello"
+    android:paddingBottom="0dp"
+    android:background="#000000"
+    tools:context="com.example.app.MainActivity2$PlaceholderFragment">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+    <!-- 2 columns -->
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_marginBottom="4dp"
+        android:background="#808080">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bentornato"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:id="@+id/textView"></TextView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+        <Button
+            android:id="@+id/bot1"
+            android:layout_width="match_parent"
+            android:text="join"
+            android:layout_weight="48"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/bot2"
+            android:layout_width="match_parent"
+            android:text="settings"
+            android:layout_weight="48"
+            android:layout_height="match_parent" />
+        </LinearLayout>
+        </LinearLayout>
+    </TableRow>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Queste sono le tue carte:"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:id="@+id/textView"></TextView>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:layout_marginBottom="4dp"
+            android:background="#808080">ì
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listViewp"
+                android:layout_column="0"
+                android:dividerHeight="5dp" />
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
+
+
